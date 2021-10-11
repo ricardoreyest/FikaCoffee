@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_card"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    app:cardCornerRadius="16dp"
+    android:elevation="8dp"
+    android:clickable="true"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/caramel_macchiato"
+            />
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caramel Machiato"
+            android:textColor="#fff"
+            android:textSize="32dp"
+            android:background="@color/coffee1"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1290"
+            android:textColor="#fff"
+            android:textSize="32dp"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

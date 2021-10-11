@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include layout="@layout/app_bar"></include>
+    <include layout="@layout/app_bar" android:id="@+id/main_include1"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_include1">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
