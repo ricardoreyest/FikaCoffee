@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/back">
+
+    <include android:id="@+id/detail_include" layout="@layout/app_bar"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="22dp"
+        android:layout_below="@+id/detail_include"
+        android:translationY="16dp"
+        android:id="@+id/detail_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:src="@drawable/americano"/>
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black coffe"
+                android:textSize="34dp"
+                android:fontFamily="@font/shadowsintolightregular"
+                android:layout_below="@+id/detail_image"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black coffe"
+                android:textSize="18dp"
+                android:fontFamily="@font/shadowsintolightregular"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/detail_name"
+                />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

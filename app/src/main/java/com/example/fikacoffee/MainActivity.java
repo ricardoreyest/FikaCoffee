@@ -18,6 +18,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 public class MainActivity extends AppCompatActivity
 {
+    public static final String NAME_COFFEE ="";
     private MaterialToolbar toolbar;
 
     private RecyclerView recyclerView;
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Soporte barra
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    //Representación de la barra
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    //Eventos de la barra
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item)
     {

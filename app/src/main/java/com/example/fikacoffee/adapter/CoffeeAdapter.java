@@ -1,6 +1,7 @@
 package com.example.fikacoffee.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.fikacoffee.DetailActivity;
+import com.example.fikacoffee.MainActivity;
 import com.example.fikacoffee.R;
 import com.example.fikacoffee.model.Coffee;
 import com.google.android.material.card.MaterialCardView;
@@ -65,6 +68,17 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.CoffeeHold
             imageView = itemView.findViewById(R.id.item_image);
             txt_title = itemView.findViewById(R.id.item_title);
             txt_price =itemView.findViewById(R.id.item_price);
+
+            card.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    Intent intent = new Intent(activity, DetailActivity.class);
+                    intent.putExtra(MainActivity.NAME_COFFEE, txt_title.getText().toString());
+                    activity.startActivity(intent);
+                }
+            });
         }
     }
 }

@@ -25,10 +25,11 @@
             android:layout_height="wrap_content"
             android:text="Caramel Machiato"
             android:textColor="#fff"
-            android:textSize="32dp"
+            android:textSize="24dp"
             android:background="@color/coffee1"
             android:padding="16dp"
             android:layout_alignParentBottom="true"
+            android:fontFamily="@font/shadowsintolightregular"
             />
         <TextView
             android:id="@+id/item_price"
@@ -36,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="1290"
             android:textColor="#fff"
-            android:textSize="32dp"
+            android:textSize="18dp"
             android:padding="16dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
